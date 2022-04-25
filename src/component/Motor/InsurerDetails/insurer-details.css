@@ -1,0 +1,138 @@
+/* pop up */
+.driver-popup-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(30,31,32,0.86);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 600;
+  transition : all 0.5s;
+}
+.driver-poup-container-active{
+  opacity: 1;
+  visibility: visible;
+}
+.popup-card{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  bottom: -100%;
+  left: 0;
+  max-height: 90vh;
+  overflow: auto;
+  padding: 25px 32px 40px 32px;
+  border-radius: 24px 24px 0 0;
+  transition: all 0.5s;
+  max-width: 500px;
+  z-index: 100;
+  scroll-behavior: smooth;
+}
+.popup-card::-webkit-scrollbar {
+	display: none;
+}
+.show-bottom-card{
+  bottom: 0;
+}
+.close-popup-btn{
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  background: #F6F6F6;
+}
+.popup-heading{
+  font-family: poppinsSemiBold;
+  font-size: 22px;
+  color: #632C50;
+  margin: 22px 0 27px 0;
+}
+.poup-input{
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08) !important;
+  background: white !important;
+}
+.addition-driver-box{
+  background: #F7F7F7;
+  color: #666666;
+}
+.motor-insurance-type-box{
+  height: 50px;
+  border-radius: 16px;
+  background: white;
+  color: #A7A3A3;
+  font-size: 12px;
+  font-family: poppinsMedium;
+  border: 2px solid #DFDFDF;
+  transition: all 0.5s;
+}
+.motor-insurance-type-box-active{
+  border: 2px solid #632C50 !important;
+  font-family: poppinsBold;
+  color: #632C50;
+}
+.insurare-page-header{
+  margin-top: 35px;
+}
+.driver-input{
+  border: 1px solid #DFDFDF !important;
+}
+.driver-container{
+  width: 100%;
+  background: white;
+  border: 1px solid #AD6C11;
+  border-radius: 8px;
+  margin-top: 30px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+.driver-container-title{
+  height: 40px;
+  width: 100% !important;
+  background: #AD6C11;
+  color: white;
+  font-family: poppinsSemiBold;
+  font-size: 16px;
+  border-radius: 8px 8px 0 0;
+  padding: 0 15px;
+}
+.remove-driver-container{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;;
+  background: white;
+  font-size: 18px;
+  color: #AD6C11;
+  cursor: pointer;
+}
+
+.pi-dob-select{
+  height: 58px;
+  border-radius: 10px;
+  border: 1px solid #E8E8E8;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.02);
+  padding: 10px;
+  outline: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: url(../../../static/images/caret-down.png);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  font-size: 12px;
+  font-family: poppinsSemiBold;
+  color: #A79E9E;
+}
+.license-date-title{
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-family: poppinsRegular;
+  color: #000000;
+}
+
+@media(min-width : 768px){
+  .popup-card{
+    left: 50%;
+    margin-left: -250px;
+  }
+}

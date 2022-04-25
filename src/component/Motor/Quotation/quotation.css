@@ -1,0 +1,160 @@
+.quotation-top-heading{
+  font-size: 12px;
+  font-family: poppinsRegular;
+  color: black;
+}
+.proceed-btn-section{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  padding: 25px 30px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  z-index: 100;
+}
+.proceed-btn{
+  font-size: 15px !important;
+  font-family: poppinsSemiBold !important;
+  width: 165px !important;
+  height: 50px;
+  border-radius: 16px !important;
+  background: linear-gradient(to right,#632C50,#AD6C11);
+}
+.proceed-btn:disabled{
+  background: #787979;
+}
+.body-pb{
+  padding-bottom: 100px;
+}
+.reffral-container{
+  position: relative;
+  height: 150px;
+  font-size: 16px;
+  font-family: ApercuLight;
+  color: #1E1F20;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  margin-top: 250px;
+}
+.body-pb{
+  padding-bottom: 100px;
+}
+
+.Province-container{
+  color: black;
+  font-size: 12px;
+  font-family: poppinsRegular;
+  /* padding-right: 20px; */
+}
+.province-select{
+  height: 25px;
+  width: 80px;
+  background: transparent;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  background-image: url(../../../static/images/caret-down.png);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  color: #632C50;
+  font-family: poppinsSemiBold;
+}
+
+.policy-detail-container{
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  border: 2px solid #DFDFDF;
+  margin: 30px 0;
+  border-bottom: none;
+}
+.quotation-card-top-container{
+  padding: 15px 20px 10px 20px;
+}
+
+.quotation-card-heading{
+  font-size: 14px;
+  font-family: poppinsSemiBold;
+  color: black;
+}
+.quotation-card-container{
+  margin: 6px 0;
+  font-size: 12px;
+  font-family: poppinsRegular;
+  color: #000000;
+}
+.green-right-container{
+  height: 16px;
+  width: 16px;
+  background: #5FC97F;
+  border-radius: 50%;
+}
+.red-close-container{
+  height: 16px;
+  width: 16px;
+  background: white;
+  border-radius: 50%;
+}
+.quotation-card-bottom-container{
+  height: 49px;
+  width: 100%;
+  background: #DFDFDF;
+  border-radius: 15px;
+  padding: 0 20px;
+}
+.policy-details-container{
+  height: 30px;
+  width: 100px;
+  border-radius: 16px;
+  background: white;
+  font-size: 12px;
+  font-family: poppinsRegular;
+  color: black;
+}
+.quotation-omr{
+  color: #632C50;
+  font-size: 14px;
+  font-family: poppinsBold;
+}
+.best-value-container{
+  background: #AD6C11;
+  width: 100%;
+  height: 40px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  color: white;
+  font-size: 12px;
+  font-family: poppinsRegular;
+}
+.policy-detail-container-active{
+  border-top: none !important;
+  border: 2px solid #632C50;
+  border-bottom: none !important;
+}
+.quotation-card-bottom-container-active{
+  background: linear-gradient(to right,#632C50,#AD6C11);
+}
+.quotation-omr-active{
+  color: white;
+}
+.quotation-base-price{
+  color: #AD6C11;
+  font-size: 18px;
+  font-family: poppinsBold;
+}
+
+
+@media(min-width : 768px){
+  .proceed-btn-section{
+    position: relative;
+    box-shadow: none;
+  }
+  .body-pb{
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,241 @@
+.annual-premium-card{
+  background-color: white;
+  border-radius: 16px;
+  margin-top: 15px;
+  padding: 16px 12px 8px 16px;
+}
+.green-right-img{
+  margin-right: 4px;
+}
+.pc-margin{
+  margin-left: 30px;
+}
+.promocode-img{
+  height: 17px;
+  width: 16px;
+}
+.promocode-input-container{
+  padding-top: 8px;
+  margin-top: 15px;
+}
+.promocode-input{
+  border: 2px solid #DFDFDF;
+  outline: none;
+  background: white;
+  border-radius: 8px;
+  height: 40px;
+  padding:0 10px;
+  font-size: 14px;
+  font-family: poppinsRegular;
+  color: black;
+}
+.promocode-btn{
+  height: 40px;
+  margin-left: 15px;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 12px !important;
+  font-family: poppinsMedium !important;
+  box-shadow: none;
+  background: #632C50;
+}
+.promocode-container{
+  padding: 10px 18px !important;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 16px;
+  height: 50px;
+  overflow: hidden;
+  border: 2px solid #DFDFDF;
+  transition: all 0.5s;
+}
+.promocode-container-active{
+  height: 120px;
+}
+.plus-img{
+  height: 13px;
+  width: 13px;
+}
+.addon-top-container{
+  background-color: white;
+  border-radius: 16px;
+  height: 52px;
+}
+.add-on-container{
+  margin-top: 30px;
+  overflow: hidden;
+  height: 50px;
+  background: transparent;
+  transition: all 0.5s;
+  border: 2px solid #DFDFDF;
+  border-radius: 16px;
+  padding: 11px 19px;
+}
+.add-on-title{
+  color: #632C50;
+  font-size: 12px;
+  font-family: poppinsBold;
+}
+.addon-container-active{
+  height: 185px;
+}
+.addon-row{
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 25px;
+}
+.addon-box{
+  height: 96px;
+  background: white;
+  font-family: poppinsRegular;
+  font-size: 10px !important;
+  color: #1E1F20;
+  border-radius: 16px;
+  padding: 12px 12px;
+  border: 2px solid #DFDFDF;
+}
+.addon-price{
+  font-family: poppinsBold;
+}
+.addon-checkbox{
+  position: relative;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background-color:#E0E0E0;
+}
+label .checkbox{
+  margin-bottom: 0 !important;
+}
+.addon-checkbox::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background-color: #632C50;
+  background-image: url("../../../static/images/small-white-checkmark.png");
+  transform: scale(0);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.addon-custom-checkbox:checked + .addon-checkbox::before{
+  transform: scale(1);
+  opacity: 1;
+  background-repeat: no-repeat;
+}
+.checked-addon{
+  border: 2px solid #632C50;
+  transition: all 0.3s;
+}
+.premium-summary-container{
+  width: 100%;
+  margin-top: 30px;
+  bottom: 0;
+  left: 0;
+  background: #632C50;
+  border-radius: 25px 25px 0 0;
+  padding: 30px;
+}
+.premium-summary-title{
+  font-size: 14px;
+  font-family: poppinsRegular;
+  color: #DFDFDF;
+  margin-bottom: 18px;
+}
+.premium-summary-card{
+  background: rgba(255, 255, 255, 0.19);
+  padding: 20px 22px;
+  border-radius : 16px;
+  color: white;
+}
+.premium-summary-subtitle{
+  font-size: 15px;
+  font-family: poppinsSemiBold;
+}
+.border-bottom{
+  width: 100%;
+  border-bottom: 1px solid #632C50;
+  margin-top: 20px;
+}
+.premium-bottom-text{
+  font-size: 20px;
+  font-family: poppinsSemiBold;
+  margin-top: 20px;
+}
+.tc-text{
+  font-size: 12px;
+  font-family: poppinsRegular;
+  color: #DFDFDF;
+  margin-left:10px;
+}
+.checkbox{
+  display: none;
+}
+.custom-checkbox{
+  position: relative;
+  height: 22px;
+  width: 22px;
+  background-color: #E0E0E0;
+  border-radius: 50%;
+}
+.custom-checkbox::after{
+  position: absolute;
+  content: "";
+  transition: all 0.3s;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background-image: url("../../../static/images/motor-checkmark.png");
+  transform: scale(0);
+  background-color: #5FC97F;
+  opacity: 0;
+  top:0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.tc-checkbox:checked + .custom-checkbox::after{
+  opacity: 1;
+  transform: scale(1);
+  background-repeat: no-repeat;
+}
+.promocode-title{
+  color : #AD6C11;
+  font-size: 12px;
+  font-family: poppinsBold;
+}
+.payment-screen-mt{
+  margin-top: 160px;
+  margin-bottom: 0;
+}
+.payment-screen-policy-details{
+  margin-top: 20px;
+}
+.payment-btn{
+  background: linear-gradient(to right, #FFD395, #FFAEE3);
+  color: #632C50;
+  font-family: poppinsSemiBold !important;
+}
+.payment-btn:disabled{
+  background: white !important;
+  color: grey;
+}
+.payment-body-pb{
+  padding-bottom: 500px;
+}
+@media(min-width : "768px"){
+  .payment-body-pb{
+    padding-bottom: 500px;
+  }
+  .premium-summary-container{
+    border-bottom-left-radius: 44px !;
+  }
+}

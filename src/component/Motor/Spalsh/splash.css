@@ -1,0 +1,96 @@
+.welcome-logo{
+    max-width: 80px;
+    max-height: 80px;
+}
+.bg-pink{
+    background: #FFE2E2 !important;
+}
+.motor-common-btn{
+    height: 50px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background: linear-gradient(to right,#632C50,#AD6C11);
+    color: white;
+    font-family: poppinsSemiBold;
+    font-size: 15px !important;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.transparent-btn{
+    background: white !important;
+    color: #632C50 !important;
+    box-shadow: none;
+    border: 1px solid #632C50;
+}
+.cloud-1{
+    top: 110px;
+    left: 200px;
+}
+.cloud-2{
+    top: 200px;
+    left: 260px;
+}
+.cloud-3{
+    top: 50px;
+    left: 400px;
+}
+.cloud-4{
+    top: 105px;
+    right: 200px;
+}
+.h1-title{
+    font-size: 28px;
+    font-family: poppinsBold;
+    color: #632C50;
+}
+.spalsh-subtitle{
+    font-size: 15px;
+    font-family: poppinsMedium;
+    color:#AD6C11;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.spalsh-bottom-img{
+    bottom: 0;
+    width: 40%;
+    height: 180px;
+}
+.welcome-renewal-btn{
+    max-width: 240px;
+    height: 40px;
+    border-radius: 15px !important;
+    background: transparent;
+    box-shadow: none;
+    color: #632C50 !important;
+    font-family: poppinsSemiBold;
+    font-size: 14px;
+    border: 1px solid #632C50;
+    margin-top: 20px;
+}
+@media(max-width : 768px){
+    .welcome-logo{
+        margin-top: 0;
+    }
+    .spalsh-bottom-img{
+        width: 110%;
+        height: auto;
+    }
+    .cloud-1{
+        top: 110px;
+        left: -30px;
+    }
+    .cloud-2{
+        top: 200px;
+        left: 60px;
+    }
+    .cloud-3{
+        top: 50px;
+        left: 100px;
+    }
+    .cloud-4{
+        top: 105px;
+        right: -13px;
+    }
+    
+}

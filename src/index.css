@@ -1,0 +1,203 @@
+:root{
+  --button-bg : linear-gradient(to Right, #CB8D39,#B76900);
+  --main-color : #CB8D39;
+  --secondary-color : #B76900;
+  --main-color-half-opacity : #CB8D39b3;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: #FAFAFA !important;
+}
+#root{
+  min-height: 100%;
+}
+h1{
+  font-size: 32px !important;
+  color: black;
+  font-family: ApercuBold;
+}
+h2{
+  font-size: 21px !important;
+  color: black;
+  font-family: ApercuBold;
+}
+.heading-mt{
+  margin-top: 40px;
+}
+.heading-mb{
+  margin-bottom: 40px;
+}
+.pc{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+button{
+  font-family: poppinsSemiBold;
+  height: 62px;
+  width: 100%;
+  border: none;
+  border-radius: 10px !important;
+  background: var(--button-bg);
+  box-shadow: 0 3px 6px rgba(7, 61, 98, 0.26);
+  font-size: 15px !important;
+  color: white;
+  transition: all 0.2s;
+}
+button:disabled{
+  background: #8E8F96;
+  box-shadow: none;
+}
+button:focus{
+  outline: none !important;
+}
+.gradient-bg{
+  padding-top: 60px;
+  min-height: 100%;
+}
+.insurance-type{
+  font-size: 20px;
+  color: #8E8F96;
+}
+.insurance-type:last-child{
+  margin-left: 20px;
+}
+.insurance-type-active{
+  color: black;
+}
+.decision-custom-radio{
+  height: 58px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+  font-size: 18px;
+  font-family: ApercuMedium;
+  transition: all 0.2s;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+}
+.decision-custom-radio::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: all 0.2s;
+}
+.decision-custom-radio-yes::after{
+  left: 100%;
+}
+.decision-custom-radio-no::after{
+  left: -100%;
+}
+.decision-radio:checked + .decision-custom-radio{
+  color: white;
+}
+.decision-radio:checked + .decision-custom-radio::after{
+  left: 0
+}
+.decision-radio-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+}
+.bottom-fixed-navigation-container{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%; 
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 10;
+}
+.bottom-next-btn{
+  height: 44px;
+  width: 76px;
+}
+.add-beneficiary-btn{
+  height: 44px;
+}
+.bottom-cancel-text{
+  font-size: 18px;
+  font-family: ApercuBold;
+  color: #8E8F96;
+  cursor: pointer;
+}
+.pb-80{
+  padding-bottom: 80px;
+}
+/* .arabic{
+  font-family: ApercuRegular;
+} */
+.hidden-element{
+  opacity: 0;
+  transition: all 0.5s;
+}
+.hidden-element-active{
+  opacity: 1;
+}
+.top-affiliate-image{
+  max-width: 150px;
+  max-height: 60px;
+}
+.question a, .question-doc-download-link {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.h1-heading{
+  color: #6B2652;
+  font-size : 32px !important;
+  font-family: ApercuBold;
+}
+.welcome-subtitle{
+  color: #8B8383;
+  font-size: 18px;
+  font-family: ApercuMedium;
+}
+.purple-btn{
+  background: #6B2652 !important;
+  box-shadow: 0 3px 6px #6B2652;
+}
+.bottom-dhofar-logo{
+  max-width: 60px;
+  max-height: 60px;
+}
+.bottom-left-container{
+  position: fixed;
+  bottom: 25px;
+  left: 30px;
+}
+.bottom-left-heading{
+  color: #B76900;
+  font-family: ApercuMedium;
+  font-size: 18px;
+}
+.bottom-left-subtitle{
+  color: #6B2652;
+  font-size: 14px;
+  font-family: ApercuMedium;
+  text-decoration: underline #6B2652;
+}
+
+@media(min-width : 768px){
+  .gradient-bg{
+    padding-top: 0;
+    background-color: white;
+    max-width: 500px;
+    border-radius: 44px;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.02);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .language-btn{
+    max-width: 300px !important;
+  }
+}

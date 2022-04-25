@@ -1,0 +1,255 @@
+@font-face {
+    font-family: poppinsBold;
+    src: url("../../../static/fonts/poppins/Poppins-Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: poppinsSemiBold;
+    src: url("../../../static/fonts/poppins/Poppins-SemiBold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: poppinsMedium;
+    src: url("../../../static/fonts/poppins/Poppins-Medium.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: poppinsRegular;
+    src: url("../../../static/fonts/poppins/Poppins-Regular.otf") format("opentype");
+  }
+.custom-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    padding-top: 40px;
+    background: white;
+}
+.gradient-bg{
+    padding-top: 60px;
+    min-height: 100%;
+    background: white;
+}
+.back-arrrow{
+    max-height: 16px;
+    max-width: 20px;
+}
+.header-links-container{
+    font-family: poppinsSemiBold;
+    font-size: 15px;
+}
+.header-links:nth-child(1){
+    color: rgba(99, 44, 80, 0.15);
+    margin-top: 12px;
+}
+.header-links:nth-child(2){
+    color: rgba(99, 44, 80, 0.4);
+    margin: 17px 0;
+}
+.header-links:nth-child(3){
+    color:#632C50;
+    font-size: 19px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #632C50;
+}
+.top-input-label{
+    margin-top: 170px !important;
+}
+.input-label{
+    font-size: 12px;
+    font-family: poppinsRegular;
+    color: #000000;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+.common-input{
+    height: 50px;
+    width: 100%;
+    background: white;
+    font-size: 13px;
+    font-family: poppinsBold;
+    color: black;
+    outline: none;
+    border: 2px solid #DFDFDF;
+    border-radius: 16px;
+    padding: 0 16px;
+}
+.car-year-container{
+    height: 48px;
+    color: #1E1F20;
+    font-size: 14px;
+    font-family: ApercuBold;
+    background:rgba(230, 230, 230, 0.4);
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    background-image: url(../../../static/images/caret-down.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    padding: 0 15px;
+}
+.estimated-container{
+    border: 2px solid #DFDFDF;
+    border-radius: 16px;
+
+}
+.estimated-omr-container{
+    height: 48px;
+    border-radius: 16px 0 0 16px;
+    background: white;
+    width:48px;
+    font-size: 12px;
+    font-family: poppinsSemiBold;
+    color: #A7A3A3;
+}
+.estimated-input{
+    height: 48px;
+    outline: none;
+    background: white;
+    font-size: 12px;
+    font-family: poppinsBold;
+    color: black;
+    border-radius: 0 16px 16px 0;
+    border: none;
+}
+.estimate-value-range{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to left, #AD6C11, #632C50 );
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.estimate-value-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 4px solid  #AD6C11;
+    background-color: #632C50;
+}
+.estimate-value-range::-moz-range-thumb {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+}
+.common-blue-subheading{
+    color: #AD6C11;
+    font-size: 12px;
+    font-family: poppinsRegular;
+}
+.active-page-link{
+    font-family: ApercuBold;
+    font-size: 22px;
+    color: #6B2652;
+}
+.active-page-link{
+    border-bottom: 2px solid #632C50 ;
+}
+button:disabled{
+    background: #8E8F96 !important;
+    box-shadow: none;
+}
+.text-gradient{
+    background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#FFFFFF));
+    background: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.input-error-message{
+    font-size: 12px;
+    font-family: poppinsMedium;
+    color: red;
+    margin-top: 5px;
+}
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.8);
+    visibility: hidden;
+    opacity: 0;
+}
+.loader-active{
+    visibility: visible;
+    opacity: 1;
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    
+    animation-duration: 0.6s;
+    animation-name: loading;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle:nth-child(1){
+    background: #632C50;
+    animation-delay: 0s;
+}
+.circle:nth-child(2){
+    background-color: #894D30;
+    animation-delay: 0.2s;
+}
+.circle:nth-child(3){
+    background: #AD6C11;
+    animation-delay: 0.4s;
+}
+.loader-container{
+    height: 60px;
+}
+.refistration-mark-container{
+    height: 50px;
+    width: 100%;
+    background: white;
+    font-size: 13px;
+    font-family: poppinsBold;
+    color: black;
+    outline: none;
+    border: 2px solid #DFDFDF;
+    border-radius: 16px;
+    padding: 0 16px;
+    background-image: url(../../../static/images/caret-down.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    -webkit-appearance: none;
+}
+.refistration-mark-container > option{
+    width: 100%;
+    overflow: hidden;
+}
+
+@keyframes loading {
+    from {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+
+@media(min-width : 768px){
+   .bg-grdient{
+        padding-top: 0;
+        max-width: 500px;
+        border-radius: 44px;
+        box-shadow: 0 3px 30px rgba(0, 0, 0, 0.02);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        position: relative;
+   }
+   .custom-header{
+       position: absolute;
+       border-top-left-radius: 44px;
+       border-top-right-radius: 44px;
+   } 
+}

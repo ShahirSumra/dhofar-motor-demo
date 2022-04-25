@@ -1,0 +1,53 @@
+.policy-number-container{
+  background-color: #FFC9C9;
+  padding: 12px;
+  border-radius: 16px;
+  margin: 25px 0;
+}
+.policy-number-inner-container{
+  border-radius: 16px;
+  border : 2px dotted #FFFFFF;
+  padding: 16px 12px;
+}
+.success-img{
+  max-height: 160px;
+}
+.refernce-text{
+  font-size: 14px;
+  font-family: poppinsMedium;
+  color: black;
+}
+.policy-number-upper-text{
+  color: #1E1F20;
+}
+.policy-number-bottom-text{
+  font-size: 12px;
+  font-family: poppinsRegular !important;
+}
+.subheading-greetings-text{
+  font-size: 15px;
+  font-family: poppinsRegular;
+  color: black;
+}
+.greetings-text{
+  font-size: 20px;
+  font-family : poppinsSemiBold;
+  color: #632C50;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.contact-us-images{
+  height: 12px;
+  width: 12px;
+  margin-right: 6px;
+}
+.payment-done-img{
+  max-height: 135px;
+  margin-top: 36px;
+  margin-bottom: 23px;
+}
+@media(min-width : 768px){
+  .success-img{
+    max-height: 140px;
+  }
+}

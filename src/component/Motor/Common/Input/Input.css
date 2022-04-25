@@ -1,0 +1,49 @@
+.form-input-container{
+  height: 58px;
+  border-radius: 10px;
+  border: 1px solid #E8E8E8;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.02);
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+  margin-top: 12px;
+}
+.form-input-place-holder{
+  position: absolute;
+  font-size: 12px;
+  font-family: poppinsSemiBold;
+  color: #A79E9E;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+.form-input{
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: #3C3C3C;
+  font-family: poppinsBold;
+}
+.form-input-place-holder-up{
+  font-size: 10px;
+  color: #8E8F96;
+  top: 30%;
+}
+.form-input-down{
+  margin-top: 15px;
+}
+.form-input-check{
+  margin-top: 15px;
+}
+.input-error-message{
+  font-size: 10px;
+  font-family: poppinsSemiBold;
+  padding-left: 10px;
+  margin-top: 4px;
+  color: red;
+}

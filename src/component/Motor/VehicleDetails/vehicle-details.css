@@ -1,0 +1,25 @@
+.insurance-type-row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.ncd-row{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.ncd-box{
+  height: 80px;
+  background: white;
+  color:  #A7A3A3;
+  font-size: 14px;
+  font-family: poppinsMedium;
+  border: 2px solid #E6E6E6;
+  transition: all 0.5s;
+  border-radius: 16px;
+}
+.ncd-active-box{
+  border: 2px solid #632C50 !important;
+  font-family: poppinsBold;
+  color: #632C50;
+}

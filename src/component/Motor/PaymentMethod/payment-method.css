@@ -1,0 +1,53 @@
+.master-visa-container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 240px
+}
+.expiray-date-container{
+  height: 48px !important;
+  margin-top: 16px;
+  border: 2px solid #DFDFDF;
+  border-radius: 16px;
+  width: 148px;
+}
+.expiray-date-input{
+  width: 100px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  outline: none;
+  border: none;
+  padding:0 10px ;
+  background:white;
+  font-size: 12px !important;
+  font-family: poppinsBold !important;
+  color: black;
+}
+.calendar-container{
+  width: 48px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: white;
+}
+.cvv-input{
+  height: 48px;
+  width: 148px;
+  border-radius: 16px;
+  outline: none;
+  padding: 0 10px;
+  background: white;
+  border: 2px solid #DFDFDF;
+  font-size: 12px !important;
+  font-family: poppinsBold !important;
+  color: black;
+}
+.car-payment-row{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+}
+@media(min-width : 768px){
+  .master-visa-container{
+    margin-top: 90px;
+  }
+}
